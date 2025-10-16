@@ -1,0 +1,7 @@
+# This branch contains an unpacked routeros-...-light.tar.zst archive.
+# Unlike routeros-...-full.tar.zst, it excludes relatively large files.
+#
+# The following files have been excluded because their size exceeds 32MB.
+#
+# Block and character devices, pipes and sockets cannot be committed by git,
+# so they are only present in the archives mentioned above.
