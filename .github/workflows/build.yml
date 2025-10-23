@@ -580,6 +580,8 @@ jobs:
         with:
           branch: ${{ env.branch }}
           commit_message: ${{ steps.compose_message.outputs.message }}
+          create_branch: 'true'
+          skip_fetch: 'true'
           push_options: '--force'
           repository: "${{ env.box }}"
-          #tagging_message: "${{ env.tag }}"
+          #tag_name: "${{ env.tag }}"
